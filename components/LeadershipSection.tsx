@@ -50,7 +50,7 @@ const leaders = [
 
 export default function LeadershipSection() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-[var(--color-background-light)] py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-primary)]">
@@ -90,13 +90,13 @@ export default function LeadershipSection() {
                   <div className="inline-flex items-center rounded-full bg-[var(--color-background-light)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wide text-[var(--color-primary)]/90 mb-2">
                     {leader.tag}
                   </div>
-                  <h3 className="text-base font-semibold text-[var(--color-text-dark)] md:text-lg">
+                  <h3 className="text-base font-semibold text-slate-900 md:text-lg">
                     {leader.name}
                   </h3>
                   <p className="mt-1 text-sm font-semibold text-[var(--color-primary)]">
                     {leader.title}
                   </p>
-                  <p className="mt-2 text-xs leading-relaxed text-[var(--color-text-dark)]/75">
+                  <p className="mt-2 text-xs leading-relaxed text-slate-700">
                     {leader.subtitle}
                   </p>
                 </div>

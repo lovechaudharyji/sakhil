@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-background-dark)] text-white pt-20 pb-10 border-t border-white/10">
-      <div className="container mx-auto px-6">
-        <div className="mb-16 grid gap-12 md:grid-cols-4">
-          <div className="col-span-1 mb-4 flex flex-col md:col-span-2">
-            <Link href="/" className="mb-6 flex items-center gap-3">
+    <footer className="border-t border-white/10 bg-[var(--color-background-dark)] text-white">
+      <div className="mx-auto max-w-7xl px-6 pb-6 pt-8">
+        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+          <div className="flex flex-col gap-4">
+            <Link href="/" className="flex items-center gap-3">
               <div className="relative h-9 w-9 overflow-hidden rounded-full border border-white/30 bg-white/10">
                 <Image
                   src="/qt=q_95.webp"
@@ -24,55 +24,56 @@ export default function Footer() {
                 World Peace Harmony
               </span>
             </Link>
-            <p className="text-gray-400 leading-relaxed max-w-md mb-8">
-              We are a global non-profit organization dedicated to fostering peace, unity, and sustainable development through leadership, education, and community engagement.
+            <p className="max-w-sm text-xs leading-relaxed text-gray-300">
+              A global interfaith platform from India dedicated to peaceful coexistence and service.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <a
                 href="https://www.facebook.com/worldpeaceharmonyIndia/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-all hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-4 w-4" />
               </a>
               <a
                 href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-all hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
               >
-                <Twitter className="h-5 w-5" />
+                <Twitter className="h-4 w-4" />
               </a>
               <a
                 href="https://www.instagram.com/worldpeaceharmony0/?hl=en"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-all hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-4 w-4" />
               </a>
               <a
                 href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-all hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-4 w-4" />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h4 className="mb-6 text-lg font-bold text-white">Quick Links</h4>
-            <ul className="space-y-4">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              Navigation
+            </h4>
+            <ul className="mt-3 space-y-2 text-xs">
               {[
-                { name: "About", href: "#about" },
-                { name: "Programs", href: "#events" },
-                { name: "Membership", href: "#membership" },
+                { name: "About", href: "/about" },
+                { name: "Mission", href: "/mission" },
+                { name: "Media", href: "/media" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 transition-colors hover:text-white"
                   >
                     {link.name}
                   </Link>
@@ -81,34 +82,42 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
-            <h4 className="mb-6 text-lg font-bold text-white">Contact Us</h4>
-            <ul className="space-y-4 text-gray-400">
-              <li className="flex items-start gap-3">
-                <span className="font-semibold text-white">HQ:</span>
-                123 Peace Avenue, Geneva, Switzerland
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-[var(--color-accent)]" />
-                <a href="mailto:contact@wph.org" className="hover:text-white transition-colors">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              Delhi Office
+            </h4>
+            <div className="mt-3 space-y-3 text-xs text-gray-300">
+              <p className="leading-relaxed">
+                100, Nihal Vihar Park Rd,
+                <br />
+                DDA Park Nihal Vihar, Nangloi,
+                <br />
+                Delhi, 110041, India
+              </p>
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4 text-[var(--color-accent)]" />
+                <a
+                  href="mailto:contact@wph.org"
+                  className="text-gray-200 transition-colors hover:text-white"
+                >
                   contact@wph.org
                 </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="font-semibold text-white">Tel:</span>
-                +41 22 123 4567
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} World Peace Harmony. All rights reserved.</p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+        <div className="mt-6 border-t border-white/10 pt-4 text-[11px] text-gray-500 md:flex md:items-center md:justify-between">
+          <p>
+            © {new Date().getFullYear()} World Peace Harmony. All rights reserved.
+          </p>
+          <div className="mt-3 flex flex-wrap items-center gap-4 md:mt-0">
+            <a href="#" className="transition-colors hover:text-white">
+              Privacy Policy
+            </a>
+            <a href="#" className="transition-colors hover:text-white">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

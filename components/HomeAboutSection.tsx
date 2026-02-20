@@ -155,15 +155,15 @@ export default function HomeAboutSection() {
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-primary)]">
                     Interfaith Dialogue
                   </p>
-                  <p className="mt-2 text-sm text-[var(--color-text-dark)]/80">
+                  <p className="mt-2 text-sm text-slate-900">
                     Roundtables, summits, and community forums that build trust across traditions.
                   </p>
-                  <div className="mt-6 rounded-2xl border border-dashed border-[var(--color-secondary)]/40 bg-[var(--color-background-light)] px-4 py-3 text-xs leading-relaxed text-[var(--color-text-dark)]/70">
+                  <div className="mt-6 rounded-2xl border border-dashed border-slate-800/40 bg-slate-950 px-4 py-3 text-xs leading-relaxed text-slate-100">
                     “Our commitment is to create spaces where every voice is heard and every community feels
                     represented in the pursuit of peace.”
                   </div>
 
-                   <div className="mt-6 rounded-2xl border border-dashed border-[var(--color-secondary)]/40 bg-[var(--color-background-light)] px-4 py-3 text-xs leading-relaxed text-[var(--color-text-dark)]/70">
+                   <div className="mt-6 rounded-2xl border border-dashed border-slate-800/40 bg-slate-950 px-4 py-3 text-xs leading-relaxed text-slate-100">
                     “Our commitment is to create spaces where every voice is heard and every community feels
                     represented in the pursuit of peace.”
                   </div>

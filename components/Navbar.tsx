@@ -42,14 +42,14 @@ export default function Navbar() {
           : "bg-transparent py-6"
       )}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative h-15 w-16 overflow-hidden rounded-full border border-white/30 bg-white/10">
+          <div className="relative h-14 w-14 overflow-hidden rounded-full border border-white/30 bg-white/10">
             <Image
               src="/qt=q_95.webp"
               alt="World Peace Harmony symbol"
               fill
-              sizes="56px"
+              sizes="64px"
               className="object-contain"
               priority
             />

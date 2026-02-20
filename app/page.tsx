@@ -86,10 +86,10 @@ function HomeSignatureInitiatives() {
                 </div>
               </div>
               <div className="flex flex-col gap-3 px-6 py-6">
-                <h3 className="text-lg font-semibold text-[var(--color-text-dark)]">
+                <h3 className="text-lg font-semibold text-slate-900">
                   {initiative.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-[var(--color-text-dark)]/80">
+                <p className="text-sm leading-relaxed text-slate-700">
                   {initiative.description}
                 </p>
               </div>
@@ -142,10 +142,10 @@ function HomePhotoGallery() {
           <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-primary)]">
             Photo Gallery
           </h2>
-          <p className="mt-4 text-3xl font-semibold text-[var(--color-text-dark)] md:text-4xl">
+          <p className="mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">
             Moments from our global peace initiatives.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-[var(--color-text-dark)]/80 md:text-base">
+          <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
             A visual journey through gatherings, community work, and interfaith harmony.
           </p>
         </div>
@@ -192,27 +192,27 @@ function HomePhotoGallery() {
 
 function HomeMapSection() {
   return (
-    <section className="bg-[var(--color-background-light)] py-24 text-[var(--color-text-dark)]">
+    <section className="bg-[var(--color-background-light)] py-24">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 md:flex-row md:items-stretch">
         <div className="flex-1">
           <div className="inline-flex items-center gap-2 rounded-full border border-black/5 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-primary)]">
             <MapPin className="h-4 w-4" />
             <span>Our Location</span>
           </div>
-          <h2 className="mt-6 text-3xl font-semibold md:text-4xl">
+          <h2 className="mt-6 text-3xl font-semibold text-slate-900 md:text-4xl">
             Visit World Peace Harmony in Delhi.
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-[var(--color-text-dark)]/80 md:text-base">
+          <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
             You are always welcome to connect with us in person at our Delhi office,
             surrounded by the communities we serve.
           </p>
-          <div className="mt-8 rounded-2xl border border-black/5 bg-white p-6 text-sm leading-relaxed text-[var(--color-text-dark)]/85 shadow-lg">
+          <div className="mt-8 rounded-2xl border border-black/5 bg-white p-6 text-sm leading-relaxed text-slate-800 shadow-lg">
             <div className="flex items-start gap-3">
               <div className="mt-1 flex h-9 w-9 items-center justify-center rounded-xl bg-[var(--color-primary)] text-white">
                 <MapPin className="h-4 w-4" />
               </div>
               <div>
-                <p className="font-semibold">Delhi Office</p>
+                <p className="font-semibold text-slate-900">Delhi Office</p>
                 <p className="mt-1">
                   100, Nihal Vihar Park Rd,
                   <br />
