@@ -16,7 +16,7 @@ const leaders = [
     title: "Chairman, World Peace Harmony",
     detail:
       "CEO, Saifi International Events and Telefilms Inc. • CEO, Saifi Hospitals",
-    image: "/Shakeel Saifi.webp",
+    image: "/images/Shakeel Saifi.webp",
   },
   {
     badge: "Chief Patron",
@@ -24,7 +24,7 @@ const leaders = [
     title: "Chief Patron, World Peace Harmony",
     detail:
       "Minister of Road Transport and Highways, Government of India",
-    image: "/Nitin Gadkari Ji.webp",
+    image: "/images/Nitin Gadkari Ji.webp",
   },
   {
     badge: "Chief Patron",
@@ -32,7 +32,7 @@ const leaders = [
     title: "Chief Patron, World Peace Harmony",
     detail:
       "Member of Parliament • Chairman, One Nation One Election",
-    image: "/P. P. Chaudhary Ji.webp",
+    image: "/images/P. P. Chaudhary Ji.webp",
   },
   {
     badge: "Patron",
@@ -40,7 +40,7 @@ const leaders = [
     title: "Patron, World Peace Harmony",
     detail:
       "Member of Parliament, Lok Sabha",
-    image: "/Shri Pradeep Kumar Singh.webp",
+    image: "/images/Shri Pradeep Kumar Singh.webp",
   },
   {
     badge: "Vice Chairman",
@@ -48,7 +48,7 @@ const leaders = [
     title: "Vice Chairman, World Peace Harmony",
     detail:
       "Owner, Uttam Galva Steel",
-    image: "/Rajendra Singh Miglani.webp",
+    image: "/images/Rajendra Singh Miglani.webp",
   },
   {
     badge: "Chairman – Women’s Cell",
@@ -56,7 +56,7 @@ const leaders = [
     title: "Chairman, Women’s Cell, World Peace Harmony",
     detail:
       "Founder, VDO Solutions",
-    image: "/Supriya Jay Doshi.webp",
+    image: "/images/Supriya Jay Doshi.webp",
   },
 ];
 
@@ -289,7 +289,7 @@ export default function AboutPage() {
                             alt={leader.name}
                             fill
                             sizes="(min-width: 1024px) 16rem, 60vw"
-                            className="object-contain grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                            className="object-contain lg:grayscale transition-all duration-500 group-hover:scale-105 lg:group-hover:grayscale-0"
                           />
                         </div>
                       </div>
