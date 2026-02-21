@@ -6,13 +6,10 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Mission", href: "/mission" },
-  { name: "Media", href: "/media" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -46,7 +43,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative h-14 w-14 overflow-hidden rounded-full border border-white/30 bg-white/10">
             <Image
-              src="/qt=q_95.webp"
+              src="/images/qt=q_95.webp"
               alt="World Peace Harmony symbol"
               fill
               sizes="64px"
@@ -71,9 +68,10 @@ export default function Navbar() {
             ))}
           </div>
           <div className="flex items-center gap-4">
-            <ThemeToggle />
             <Link
-              href="/contact"
+              href="https://www.instagram.com/worldpeaceharmony0?igsh=Z2w1ZG5sYmdoZ3J0"
+              target="_blank"
+              rel="noreferrer"
               className="px-6 py-2.5 rounded-full bg-[var(--color-primary)] text-white text-sm font-semibold shadow-lg transition-all duration-300 hover:bg-[var(--color-secondary)] hover:shadow-xl hover:-translate-y-0.5"
             >
               Join the Movement
@@ -83,7 +81,6 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-3 md:hidden">
-          <ThemeToggle />
           <button
             className="text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -113,7 +110,9 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="https://www.instagram.com/worldpeaceharmony0?igsh=Z2w1ZG5sYmdoZ3J0"
+              target="_blank"
+              rel="noreferrer"
               className="mt-6 w-full rounded-xl bg-[var(--color-primary)] py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[var(--color-secondary)]"
               onClick={() => setIsMobileMenuOpen(false)}
             >

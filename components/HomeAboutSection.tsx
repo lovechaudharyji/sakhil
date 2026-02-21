@@ -150,8 +150,8 @@ export default function HomeAboutSection() {
           <div className="relative mx-auto w-full max-w-2xl">
             <div className="absolute -inset-4 rounded-[32px] bg-gradient-to-br from-[var(--color-primary)]/15 to-[var(--color-secondary)]/10 blur-2xl" />
             <div className="relative rounded-[32px] border border-white/60 bg-white/80 px-8 py-10 shadow-xl backdrop-blur-xl">
-              <div className="flex items-stretch gap-8">
-                <div className="flex-1">
+              <div className="flex flex-col items-stretch gap-8 md:flex-row">
+                <div className="hidden flex-1 md:block">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-primary)]">
                     Interfaith Dialogue
                   </p>
@@ -168,10 +168,10 @@ export default function HomeAboutSection() {
                     represented in the pursuit of peace.”
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="relative h-56 w-32 overflow-hidden rounded-[32px] border border-[var(--color-secondary)]/60 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] md:h-72 md:w-40">
+                <div className="flex items-center justify-center md:justify-end">
+                  <div className="relative h-96 w-full overflow-hidden rounded-[32px] border border-[var(--color-secondary)]/60 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] md:h-72 md:w-40">
                     <video
-                      src="/Video%20(5).mp4"
+                      src="/images/Video%20(5).mp4"
                       loop
                       ref={videoRef}
                       className="h-full w-full object-cover"

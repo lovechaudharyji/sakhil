@@ -49,14 +49,18 @@ export default function Hero() {
 
           <div className="flex flex-col items-center justify-start gap-4 sm:flex-row lg:justify-start">
             <Link
-              href="#about"
+              href="https://www.instagram.com/mohmmadsakil0?igsh=bXByMmhrMG1heGx1"
+              target="_blank"
+              rel="noreferrer"
               className="group flex w-full items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-[var(--color-primary)] shadow-lg transition-all hover:shadow-xl sm:w-auto"
             >
-              Join the Mission
+              Contact Us
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href="#membership"
+              href="https://www.instagram.com/worldpeaceharmony0?igsh=Z2w1ZG5sYmdoZ3J0"
+              target="_blank"
+              rel="noreferrer"
               className="flex w-full items-center justify-center rounded-full border border-white/60 px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-white/10 sm:w-auto"
             >
               Become a Member
@@ -86,7 +90,7 @@ export default function Hero() {
               }}
             >
               <Image
-                src="/symbol.png"
+                src="/images/symbol.png"
                 alt="World Peace Harmony symbol"
                 fill
                 sizes="(min-width: 1024px) 42rem, 32rem"

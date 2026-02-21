@@ -150,7 +150,7 @@ function HomePhotoGallery() {
           </p>
         </div>
         <div
-          className={`mt-12 grid auto-rows-[120px] grid-cols-2 gap-3 sm:auto-rows-[140px] sm:grid-cols-3 lg:auto-rows-[160px] lg:grid-cols-6 transition-opacity duration-700 ${
+          className={`mt-12 grid auto-rows-[80px] grid-cols-2 gap-3 sm:auto-rows-[140px] sm:grid-cols-3 lg:auto-rows-[160px] lg:grid-cols-6 transition-opacity duration-700 ${
             isFading ? "opacity-0" : "opacity-100"
           }`}
         >

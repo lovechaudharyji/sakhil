@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
+import { Facebook, Instagram, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,29 +32,17 @@ export default function Footer() {
                 href="https://www.facebook.com/worldpeaceharmonyIndia/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[#1877F2] hover:bg-[#1877F2] hover:text-white"
               >
                 <Facebook className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
-              >
-                <Twitter className="h-4 w-4" />
               </a>
               <a
                 href="https://www.instagram.com/worldpeaceharmony0/?hl=en"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-transparent hover:bg-[radial-gradient(circle_at_30%_107%,#fdf497_0%,#fdf497_5%,#fd5949_45%,#d6249f_60%,#285AEB_90%)] hover:text-white"
               >
                 <Instagram className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/5 text-gray-100 transition hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-[var(--color-text-dark)]"
-              >
-                <Linkedin className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -66,8 +54,6 @@ export default function Footer() {
             <ul className="mt-3 space-y-2 text-xs">
               {[
                 { name: "About", href: "/about" },
-                { name: "Mission", href: "/mission" },
-                { name: "Media", href: "/media" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
