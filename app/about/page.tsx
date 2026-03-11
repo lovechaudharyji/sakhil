@@ -15,7 +15,7 @@ const leaders = [
     name: "Dr. Shakeel Saifi",
     title: "Chairman, World Peace Harmony",
     detail:
-      "CEO, Saifi International Events and Telefilms Inc. • CEO, Saifi Hospitals",
+      "CEO, Saifi International Events and Telefilms Inc. • CEO, Saifi Hospital",
     image: "/images/Shakeel Saifi.webp",
   },
   {
@@ -177,7 +177,7 @@ export default function AboutPage() {
                       src={slide.image}
                       alt="People gathered together"
                       fill
-                      className="object-cover"
+                      className={activeSlide === 0 || activeSlide === 2 ? "object-cover object-[50%_20%] md:object-[50%_32%]" : "object-cover object-[50%_60%] md:object-[50%_52%]"}
                     />
                   </div>
                 </div>
@@ -376,6 +376,61 @@ export default function AboutPage() {
                 </ul>
               </motion.div>
             </div>
+          </div>
+        </section>
+
+        <section className="py-24 container mx-auto px-6">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.5 }}
+              className="order-1 rounded-3xl border border-black/5 bg-white/90 p-4 shadow-sm backdrop-blur"
+            >
+              <div className="relative h-60 w-full overflow-hidden rounded-2xl bg-black/10 sm:h-72 md:h-80 lg:h-96">
+                <video
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  src="/images/school.mp4"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="order-2"
+            >
+              <h2 className="flex items-center gap-3 text-3xl font-semibold text-[var(--color-primary)] md:text-4xl">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
+                  <Users className="h-5 w-5" />
+                </span>
+                <span>Education & Social Harmony</span>
+              </h2>
+              <p className="mt-4 text-sm md:text-base leading-relaxed text-[var(--color-text-dark)]/80">
+                A special program at Saifi Talimi Madrasa, Nangloi (New Delhi) highlighted the
+                institution’s role in education and social harmony. Chairperson Rubina Saifi,
+                Washeela Saifi, the management committee and local dignitaries attended.
+              </p>
+              <p className="mt-3 text-sm md:text-base leading-relaxed text-[var(--color-text-dark)]/80">
+                The madrasa provides free education to nearly 2,800 children, teaching Urdu,
+                Hindi, English and modern computer education—blending traditional learning with
+                contemporary skills for economically weaker families.
+              </p>
+              <p className="mt-3 text-sm md:text-base leading-relaxed text-[var(--color-text-dark)]/80">
+                As chief guest, World Peace Harmony Chairman Shakeel Saifi praised the effort and
+                acknowledged national initiatives in digital empowerment, the New Education Policy
+                and skill development that expand opportunities for India’s youth.
+              </p>
+            </motion.div>
           </div>
         </section>
 
